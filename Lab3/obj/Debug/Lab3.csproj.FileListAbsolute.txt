@@ -3,3 +3,4 @@ C:\Users\Jake & Lanna\Desktop\projects\Lab3\Lab3\bin\Debug\Lab3.exe
 C:\Users\Jake & Lanna\Desktop\projects\Lab3\Lab3\bin\Debug\Lab3.pdb
 C:\Users\Jake & Lanna\Desktop\projects\Lab3\Lab3\obj\Debug\Lab3.exe
 C:\Users\Jake & Lanna\Desktop\projects\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\Jake & Lanna\Desktop\projects\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache

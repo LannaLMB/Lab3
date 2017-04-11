@@ -12,13 +12,63 @@ namespace Lab3
         {
             // Declare Variables
             int input;
+            int square;
+            int cube;
+            string Continue;
 
 
-            // Input
-            Console.WriteLine("Please Enter an Integer: ");
-            while (!int.TryParse(Console.ReadLine(), out input))
+            //Continue Loop
+            while (true)
             {
-                Console.WriteLine("Invalid Entry!  Please Enter an Integer: ");
+
+
+                // Welcome Message
+                Console.WriteLine("******  Learn Your Squares and Cubes!!!  ******");
+                Console.WriteLine();
+
+
+                // Input
+                Console.WriteLine("Please Enter an Integer: ");
+                Console.WriteLine();
+                while (!int.TryParse(Console.ReadLine(), out input))
+                {
+                    Console.WriteLine("Invalid Entry!  Please Enter an Integer: ");
+                    Console.WriteLine();
+                }
+
+
+                // Process
+                square = input * input;
+                cube = (input * input * input);
+
+                Console.WriteLine();
+                Console.WriteLine("  Number          Squared          Cubed");
+                Console.WriteLine("==========      ==========      ==========");
+
+                int i;
+                for (i = 1; i <= input; i++)
+                {
+                    Console.WriteLine("    " + i + "               " + square + "              " + cube);
+                }
+                Console.WriteLine();
+
+
+                //Continue Loop
+                while (true)
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Continue?  (y/n)");
+                    Continue = Console.ReadLine().ToUpper();
+                    Console.WriteLine("");
+                    if (Continue == "Y")
+                        break;
+
+                    if (Continue == "N")
+                        return;
+
+                    else
+                        Console.WriteLine("Please Enter Y or N");
+                }
             }
         }
     }
