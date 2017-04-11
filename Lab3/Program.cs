@@ -38,17 +38,20 @@ namespace Lab3
 
 
                 // Process
-                square = input * input;
-                cube = (input * input * input);
-
                 Console.WriteLine();
-                Console.WriteLine("  Number          Squared          Cubed");
-                Console.WriteLine("==========      ==========      ==========");
+                Console.WriteLine("\t\t Number \t Squared \t Cubed");
+                Console.WriteLine("\t\t ========== \t ========== \t ==========");
 
+
+                //Initialize i
                 int i;
+
                 for (i = 1; i <= input; i++)
                 {
-                    Console.WriteLine("    " + i + "               " + square + "              " + cube);
+                    //Math
+                    square = i * i;
+                    cube = (i * i * i);
+                    Console.WriteLine("\t\t\t" + i + "\t\t" + square + "\t\t"+cube);
                 }
                 Console.WriteLine();
 
